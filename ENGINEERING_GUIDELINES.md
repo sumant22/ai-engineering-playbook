@@ -1,101 +1,98 @@
-# Engineering Guidelines (v1.0)
+# Engineering Guidelines (v1.1)
 
-These guidelines define how code should be written, modified, and reviewed when working with LLMs or in collaborative environments.
+These guidelines define how problems should be understood, approached, and solved when building software with or without LLMs.
 
-**Principle:** Prioritize clarity, simplicity, and correctness over speed.
+**Principle:** Favor clarity, simplicity, and correctness over speed.
 
 ---
 
-## 1. Think Before Coding
+## 1. Deliberate Before Implementation
 
 Do not assume. Make uncertainty explicit.
 
-- State assumptions before implementing.
-- If multiple interpretations exist, present them instead of choosing silently.
-- Ask clarifying questions when requirements are unclear.
-- Call out tradeoffs (e.g., simplicity vs flexibility).
-- If a simpler approach exists, propose it before coding.
-- If something is unclear, stop and ask.
+- State assumptions before writing code  
+- If multiple interpretations exist, present them clearly  
+- Ask questions when requirements are unclear  
+- Call out tradeoffs (e.g., simplicity vs flexibility)  
+- If a simpler approach exists, propose it first  
+- If something is unclear, stop and clarify  
 
 ---
 
-## 2. Simplicity First
+## 2. Prefer Minimal Solutions
 
-Solve the problem with the least code necessary.
+Solve the problem with the least necessary complexity.
 
-- Do not add features beyond the request.
-- Avoid premature abstractions, especially for single-use logic.
-- Do not introduce speculative flexibility or configuration.
-- Avoid handling unrealistic or impossible scenarios.
-- Continuously ask: "Can this be simpler?"
-
----
-
-## 3. Surgical Changes
-
-Make minimal, targeted modifications.
-
-- Only change what is required for the task.
-- Do not refactor unrelated code.
-- Match the existing code style and structure.
-- Do not fix adjacent issues unless explicitly asked.
-- Remove unused code introduced by your changes.
-- If unrelated dead code exists, mention it but do not remove it.
-
-**Test:** Every changed line should directly relate to the task.
+- Do not add features beyond the request  
+- Avoid premature abstractions, especially for single-use logic  
+- Do not introduce speculative flexibility or configuration  
+- Avoid handling unrealistic scenarios  
+- Continuously ask: “Can this be simpler?”  
 
 ---
 
-## 4. Goal-Driven Execution
+## 3. Make Targeted Changes
 
-Work toward clear, verifiable outcomes.
+Modify only what is required to achieve the goal.
 
-Convert vague tasks into concrete checks:
+- Do not refactor unrelated code  
+- Do not “clean up” adjacent areas without instruction  
+- Match the existing structure and style  
+- Remove only the unused code introduced by your changes  
+- If unrelated issues are found, mention them but do not fix  
 
-- "Fix bug" → Reproduce → Fix → Verify  
-- "Add validation" → Define invalid cases → Verify behavior  
-- "Refactor" → Ensure behavior remains unchanged  
-
-For multi-step tasks:  
-Implement → verify → adjust → re-verify → final check  
-
-Avoid vague success criteria like "it works."
-
-**"Done" for UI means:**
-- The main flow works (golden path)
-- Edge cases are handled (empty, loading, error)
-- No nearby functionality is broken
-- Passing type checks is not enough — behavior must be verified
+**Test:** Every change should directly support the task.
 
 ---
 
-## 5. Communicate While Coding
+## 4. Work Toward Verifiable Outcomes
 
-Be explicit about reasoning and concerns.
+Define success in concrete, testable terms.
 
-- Explain why a particular approach was chosen.
-- Surface uncertainties or risks early.
-- Do not silently resolve unclear requirements.
-- Keep communication concise but meaningful.
+Transform vague tasks into checks:
+
+- “Fix bug” → Reproduce → Fix → Verify  
+- “Add validation” → Define invalid cases → Verify behavior  
+- “Refactor” → Ensure behavior remains unchanged  
+
+Execution loop:
+Implement → Verify → Adjust → Re-verify → Final check  
+
+Avoid vague success criteria like “it works.”
+
+**UI is considered complete when:**
+- Main flow works (golden path)  
+- Loading, empty, and error states are handled  
+- No nearby functionality is broken  
+- Behavior is verified, not just types  
 
 ---
 
-## 6. Follow Codebase Style — With Judgment
+## 5. Communicate Decisions Clearly
 
-Follow existing patterns, but do not blindly copy poor ones.
+Make reasoning visible.
 
-- Default: follow the existing code style, patterns, and architecture.
-- Maintain consistency with surrounding code, even if it’s not your preference.
-- Write code that is easy to read, understand, and modify.
+- Explain why a particular approach was chosen  
+- Surface risks or uncertainties early  
+- Do not silently resolve unclear requirements  
+- Keep communication concise and meaningful  
 
-**However, if the existing approach is clearly problematic (performance, security, maintainability):**
-- Do not blindly follow it.
-- Call it out explicitly.
-- Suggest a better alternative with a brief reason.
+---
 
-- Do not design for hypothetical future requirements.
-- Do not add abstraction layers unless clearly needed.
-- Optimize for readability and maintainability.
+## 6. Follow Existing Patterns — With Judgment
+
+Maintain consistency, but do not blindly copy poor practices.
+
+- Follow the existing code style, patterns, and architecture  
+- Keep code easy to read, understand, and modify  
+
+**If the existing approach is clearly problematic (performance, security, maintainability):**
+- Call it out explicitly  
+- Suggest a better alternative with a brief reason  
+
+Avoid:
+- Designing for hypothetical future needs  
+- Adding unnecessary abstraction layers  
 
 **Rule of thumb:**
 - Minor imperfection → follow existing style  
@@ -111,4 +108,4 @@ These guidelines are effective when:
 - Code remains simple and readable  
 - Unnecessary abstractions are avoided  
 - Assumptions are clearly stated  
-- Behavior is verified, not just written  
+- Behavior is verified, not assumed  
