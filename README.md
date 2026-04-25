@@ -80,3 +80,7 @@ Create a system where:
 - Agents execute real-world tasks  
 
 ---
+
+## Inspiration
+
+Inspired by general AI engineering practices and community-driven approaches.
