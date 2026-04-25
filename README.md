@@ -22,11 +22,14 @@ Reusable, domain-agnostic capabilities:
 
 - `bug-fixing.md` → Structured debugging approach  
 - `api-integration.md` → Reliable API handling  
-- `ui-building.md` → Clear and maintainable UI patterns  
+- `ui-building.md` → Generic UI patterns  
+- `flutter-ui.md` → Flutter-specific UI and responsive design  
+- `testing.md` → Structured validation and test scenarios    
 
 ### 3. Agents (Execution)
-- `generic-builder-agent.md`  
-  Combines multiple skills to build complete features.
+
+- `feature-builder-agent.md` → Generic feature workflow  
+- `flutter-feature-agent.md` → Flutter-specific feature workflow  
 
 ---
 
