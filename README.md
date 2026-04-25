@@ -25,7 +25,7 @@ Reusable, domain-agnostic capabilities:
 - `ui-building.md` → Clear and maintainable UI patterns  
 
 ### 3. Agents (Execution)
-- `feature-builder-agent.md`  
+- `generic-builder-agent.md`  
   Combines multiple skills to build complete features.
 
 ---
