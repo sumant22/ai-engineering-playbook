@@ -62,7 +62,7 @@ This playbook provides a disciplined approach to make LLMs behave like productio
 
 ## Roadmap
 
-- Add more domain-specific skills (Flutter, backend, etc.)  
+- Add more domain-specific skills  
 - Improve agent workflows  
 - Introduce real-world examples  
 - Expand testing and validation patterns  
