@@ -77,7 +77,8 @@ Reusable, domain-agnostic capabilities:
 - `api-integration.md` → Reliable API handling  
 - `ui-building.md` → Generic UI patterns  
 - `flutter-ui.md` → Flutter-specific UI and responsive design  
-- `testing.md` → Structured validation and test scenarios    
+- `testing.md` → Structured validation and test scenarios
+- `state-management.md` → Decision system for choosing appropriate state management    
 
 ### 3. Agents (Execution)
 
@@ -109,10 +110,10 @@ This playbook provides a disciplined approach to make LLMs behave more like prod
 
 ## Current Status
 
-- Version: v1.0  
-- Core guidelines defined  
-- Initial skills implemented  
-- First agent created  
+- Version: v1.2  
+- Added state management decision guide  
+- Introduced codebase-aware agent workflow  
+- Improved decision-making for new and existing projects  
 
 ---
 
