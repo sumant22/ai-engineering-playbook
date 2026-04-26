@@ -83,4 +83,9 @@ Create a system where:
 
 ## Inspiration
 
-Inspired by general AI engineering practices and community-driven approaches.
+This playbook is influenced by:
+- Andrej Karpathy’s perspective on AI engineering as a new software paradigm
+- Open-source AI engineering playbooks and community best practices
+- Real-world experience building and operating production AI systems
+
+Rather than repeating existing ideas, this repository focuses on making them practical, opinionated, and directly usable in day-to-day engineering workflows.
