@@ -1,4 +1,4 @@
-# Engineering Guidelines (v1.1)
+# Engineering Guidelines (v1.2)
 
 These guidelines define how problems should be understood, approached, and solved when building software with or without LLMs.
 
@@ -99,6 +99,16 @@ Avoid:
 - Clear technical issue → suggest improvement before implementing  
 
 ---
+
+### 7. When No Clear Pattern Exists
+
+If there is no similar implementation in the codebase:
+
+- Start with the simplest valid solution  
+- Prefer local and minimal state management first  
+- Introduce structured patterns (e.g., BLoC) only when clearly required  
+
+Avoid introducing complexity without a concrete need.
 
 ## Summary
 
