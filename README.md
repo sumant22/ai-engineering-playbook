@@ -89,10 +89,10 @@ Reusable, domain-agnostic capabilities:
 ## Philosophy
 
 - Think before coding  
-- Keep solutions simple  
+- Prefer simple solutions  
 - Make minimal, focused changes  
 - Validate behavior, not just code  
-- Avoid overengineering  
+- Avoid overengineering    
 
 ---
 
@@ -103,7 +103,7 @@ LLMs are powerful, but without structure they often:
 - Make unnecessary changes  
 - Assume instead of verifying  
 
-This playbook provides a disciplined approach to make LLMs behave like production-ready engineers.
+This playbook provides a disciplined approach to make LLMs behave more like production-ready engineers.
 
 ---
 
