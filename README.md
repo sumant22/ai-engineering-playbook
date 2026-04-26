@@ -1,8 +1,18 @@
 # AI Engineering Playbook
 
-A practical system for building reliable and maintainable software using LLMs.
+A practical, opinionated guide to building and operating AI systems in production.
 
-Instead of treating LLMs as simple code generators, this project focuses on defining:
+This is not a list of tools or prompts.  
+This is about how AI systems actually work in real-world engineering.
+
+> AI engineering is less about writing code, and more about designing systems that work despite uncertainty.
+
+---
+
+## What This Covers
+
+Instead of treating LLMs as simple code generators, this playbook focuses on how to design systems around them:
+
 - Clear engineering guidelines
 - Reusable skills
 - Composable agents
