@@ -19,6 +19,30 @@ Instead of treating LLMs as simple code generators, this playbook focuses on how
 
 ---
 
+## What This Is
+
+AI engineering is not traditional software engineering.
+
+It is:
+- Data + prompts instead of fixed logic
+- Probabilistic instead of deterministic
+- Evaluation-driven instead of test-driven
+
+This playbook focuses on:
+- Building reliable AI systems
+- Managing uncertainty and failures
+- Designing workflows that scale
+
+---
+
+## What This Is Not
+
+- ❌ A prompt collection  
+- ❌ A list of AI tools  
+- ❌ A theoretical machine learning guide
+
+---
+
 ## Architecture
 
 This system is built in three layers:
