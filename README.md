@@ -43,6 +43,25 @@ This playbook focuses on:
 
 ---
 
+## Core Principles
+
+1. **Evaluation > Prompting**  
+   If you can’t measure outputs, you can’t improve them.
+
+2. **Start Simple**  
+   Avoid agents and complex pipelines unless absolutely necessary.
+
+3. **Data is the real product**  
+   Prompts change frequently, but data compounds over time.
+
+4. **Design for failure**  
+   AI systems are inherently unreliable — build with fallback and safeguards.
+
+5. **Iteration > Architecture**  
+   Most improvements come from faster iteration, not more complex systems.
+
+---
+
 ## Architecture
 
 This system is built in three layers:
